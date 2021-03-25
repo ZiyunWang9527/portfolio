@@ -1,0 +1,111 @@
+
+body{
+    font-size: 18pt; 
+    color: #505050;
+    font-family: "Nunito", sans-serif;
+    background-image: url("../imgs/SW84.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+    
+    padding-top: 130px;
+ 
+    line-height: 1.5;
+}
+/*    background-size: cover; */
+h1{
+    text-align: center;
+    font-size: 32pt;
+    line-height: 1.5;
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width:100%;
+}
+.nav_bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nav_link{
+    background-color: #353535;
+    padding-top:8px;
+    padding-bottom: 8px;
+    text-align: center;    
+    border:aliceblue 1px solid;
+  }
+.nav_link a{
+    padding:8px;
+}
+
+.photos{
+    border:#707070 2px solid;
+    border-radius: 10px;
+    background-color: rgba(250,250,250,0.5);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.photos img{
+    display:block;
+    width:98%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 8px;
+    border:#909090 1px solid;
+    padding-bottom: 0px;
+}
+.photos p{
+    padding: 4px 7px;
+    
+
+}
+
+.gap{
+    height: 18px;
+}
+#location{
+    background-color: #800000;
+}
+ul {
+    list-style:none;
+    align-items: center;
+}
+a:link{
+    color:saddlebrown;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dashed;
+            text-decoration-style: dashed;
+}
+a:visited{
+    color: #800000;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dashed;
+            text-decoration-style: dashed;
+}
+a:hover, a:focus{
+    color: #000000;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+}
+.nav_link a{
+    color:aliceblue;
+}
+
+*:focus{
+    border: 1.5px solid white;
+}
+
+
+
+footer{
+    background-color: #353535;
+    color: aliceblue;
+    
+    text-align: center;
+    padding:10px;
+}
+
+
+  
