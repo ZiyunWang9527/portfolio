@@ -5,13 +5,19 @@ body{
     background-image: url("../imgs/sw84.jpg");
     background-size: cover;
     background-attachment: fixed; 
-    padding-top: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*padding-top: 130px;*/
     line-height: 1.5;
 }
-/*    background-size: cover; */
+
+main{
+    padding-top: 80px;
+    
+}
 h1{
     text-align: center;
-    font-size: 32pt;
+    font-size: 33pt;
     line-height: 1.5;
 }
 header{
@@ -20,18 +26,58 @@ header{
     left: 0px;
     right: 0px;
     width:100%;
+    z-index: 1;
 }
+
+.contact{
+    margin-top: 20px;
+}
+
+.form_container{
+    border:#707070 2px solid;
+    background-color: rgba(250,250,250,0.5);
+    margin: 3.5% 7%;
+}
+.form_container form{
+    margin: 20px 20px;
+}
+
+input{
+    font:inherit;
+    margin:0;
+    overflow:visible;
+}
+
+.nav_bars{
+    display: grid;
+    grid-template-rows: auto auto;
+    color: aliceblue;
+    background-color: #353535;  
+}
+.album_title{
+    font-family: "New Tegomin", sans-serif;    
+    text-align: center;
+    font-size: 0pt;
+}
+
 .nav_bar{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border:aliceblue 1px solid;
 }
+
 .nav_link{
-    background-color: #353535;
     font-size: 14pt;
     padding-top:8px;
     padding-bottom: 8px;
-    text-align: center;    
-    border:aliceblue 1px solid;
+    text-align: center;   
+    /*border:aliceblue 2px solid;*/
+
+    border: aliceblue 2px solid;    
+    border-top: 0px;
+    border-left: aliceblue 1px solid;    
+    border-right: aliceblue 1px solid;  
+
 }
 
 .gallery{
@@ -55,7 +101,7 @@ header{
     padding-bottom: 0px;
 }
 .photos p{
-    padding: 4px 10px;
+    padding: 6px 15px;
 }
 
 #location{
@@ -66,32 +112,88 @@ ul {
     list-style:none;
     align-items: center;
 }
-a:link{
-    color:saddlebrown;
+a:link, a:visited{
     text-decoration: underline;
     -webkit-text-decoration-style: dashed;
             text-decoration-style: dashed;
 }
-a:visited{
-    color: #800000;
-    text-decoration: underline;
-    -webkit-text-decoration-style: dashed;
-            text-decoration-style: dashed;
-}
+
 a:hover, a:focus{
-    color: #000000;
     text-decoration: underline;
     -webkit-text-decoration-style: dotted;
             text-decoration-style: dotted;
 }
+
 .nav_link a{
     color:aliceblue;
     padding:8px;
 }
 
+
 *:focus{
-    border: 1.5px solid white;
+    border:1.5px solid white;
 }
+
+
+.flip-card {
+    background-color: aliceblue;
+    width: auto;
+    height: auto;
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+
+}
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    text-align: center;
+    margin-top: 30px;
+    color: #353535;
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
 
 footer{
     background-color: rgba(35,35,35,0.8);
@@ -101,5 +203,152 @@ footer{
     padding:20px;
 }
 
+@media only screen and (min-width: 600px) {
+    .nav_bar{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border:None;
+    }
+    /*body{
+        padding-top: 170px;
+    }*/
+    main{
+        padding-top: 140px;
+    }
+    h1{
+        font-size: 36pt;
+    }
 
+    .contact{
+        margin-top: 40px;
+    }
+    .form_container{
+        margin: 40px 12%;
+    }
+    .form_container form{
+        margin: 30px 30px;
+    }
+    a.jump {
+        background: rgba(35,35,35,0.8);
+        color:aliceblue;
+        font-family: "New Tegomin", sans-serif;
+        left: 0;
+        padding: 6px;
+        font-size: 14pt;
+        -webkit-transition: top 0.5s ease-out;
+        transition: top 0.5s ease-out;
+        z-index: 1;
+
+        /*Your code here*/
+        border-radius: 1px;
+        position: fixed;
+        top: -50px;
+    }
+
+    a.jump:focus{
+        top: 130px;
+    }
+    a.jump:hover{
+        border-top: aliceblue dashed 1px;
+        border-bottom: aliceblue dashed 1px;
+    }
+    .album_title{
+        font-size: 30pt;
+        padding-top:8px;
+        padding-bottom: 8px;
+        -webkit-animation: title_grow;
+        animation-name: title_grow;
+        animation-duration:5s;
+        animation-iteration-count: 2;
+        animation-timing-function: ease-in-out;
+    }
+    .nav_link{
+        border:aliceblue 2px solid;
+        border-left:0px;
+    }
+
+    .photos{
+        width:41%;
+        margin: 2%;
+    }
+    .photos:hover img {
+        opacity: 0.5;
+    }
+    .gallery{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }    
+    .photos img{
+        width:93%;
+        margin-top: 3.5%;
+    }
+
+    @-webkit-keyframes title_grow{
+        from {
+          opacity: 0.01;
+        }
+        to {
+          opacity: 1;
+        }
+    }
+     
+    @keyframes title_grow{
+        from {
+            opacity: 0.01;
+        }
+        to {
+            opacity: 1;
+        }
+    } 
+    @media (prefers-reduced-motion: reduce) {
+        .album_title {
+          animation: none;
+        }
+      }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+    .nav_bars{
+        grid-template-columns: 450px 500px;
+        justify-content: space-between;
+    }
+    /*body{
+        padding-top: 120px;
+    }*/
+    main{
+        padding-top: 100px;
+    }
+    .form_container{
+        margin: 40px 20%;
+    }
+    .nav_link{
+        border:0px;
+        /*padding-bottom: 0px;*/
+        
+    }
+    #location{
+        background-color: #505050;
+        border:none;
+
+        border-left:aliceblue 2px solid;
+        border-right: aliceblue 2px solid;
+    }
+
+    .photos{
+        width:40%;
+        margin: 2%;
+    }
+    
+    .gallery{
+        margin: 0% 3% 3% 3%;
+    }
+    a.jump:focus{
+        top: 90px;
+    }
+
+
+
+} 
+  
   

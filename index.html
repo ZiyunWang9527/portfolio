@@ -7,29 +7,49 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Tegomin">
 	<title>My Travel Album - Ann Arbor</title>
 </head>
 <body>
+	<a class="jump" href="#main">Jump to Content</a>
 	<header>
 		<nav>
-			<ul class="nav_bar">
-				<li class="nav_link" id="location"><a href = "index.html">Ann Arbor</a></li>
-				<li class="nav_link"><a href = "hongkong.html">Hong Kong</a></li>
-				<li class="nav_link"><a href = "yangzhou.html">Yangzhou</a></li>
-				<li class="nav_link"><a href = "saigon.html">Saigon</a></li>
-			</ul>
+			<ul class="nav_bars">
+				<li>
+					<div class="album_title">
+						<p>My Travel Album</p>
+					</div>
+				</li>
+				<li>
+					<ul class="nav_bar">
+						<li class="nav_link" id="location"><a href = "index.html">Ann Arbor</a></li>
+						<li class="nav_link"><a href = "hongkong.html">Hong Kong</a></li>
+						<li class="nav_link"><a href = "yangzhou.html">Yangzhou</a></li>
+						<li class="nav_link"><a href = "saigon.html">Saigon</a></li>
+					</ul>
+				</li>
+			</ul>	
 		</nav>
 	</header>
-	<main>
+	<main id="main">
         <h1>Ann Arbor</h1>
 		<div class="gallery">
 			<div class="photos">
-				<img src="imgs/aa1.jpg" alt=""/>
-				<p>Celecrating Diwali Festival in U of M</p>
+				<img src="imgs/aa1.jpg" alt="" />
+				<p>Celecrating Diwali Festival in U of M</p>												
 			</div>
+			<div class="photos">
+				<img src="imgs/aa11.jpg" alt=""/>
+				<p>Swing</p>
+			</div>
+
 			<div class="photos">
 				<img src="imgs/aa2.jpg" alt=""/>
 				<p>Burton Memorial Tower(1)</p>
+			</div>			
+			<div class="photos">
+				<img src="imgs/aa5.jpg" alt=""/>
+				<p>Burton Memorial Tower(2)</p>
 			</div>
 			<div class="photos">
 				<img src="imgs/aa3.jpg" alt=""/>
@@ -39,10 +59,7 @@
 				<img src="imgs/aa4.jpg" alt=""/>
 				<p>Law school(2)</p>
 			</div>
-			<div class="photos">
-				<img src="imgs/aa5.jpg" alt=""/>
-				<p>Burton Memorial Tower(2)</p>
-			</div>
+
 			<div class="photos">
 				<img src="imgs/aa6.jpg" alt=""/>
 				<p>A snowy day</p>
@@ -50,24 +67,20 @@
 			<div class="photos">
 				<img src="imgs/aa7.jpg" alt=""/>
 				<p>A foggy day in Mitchell Field</p>
+			</div>			
+			<div class="photos phone">
+				<img src="imgs/aa9.jpg" alt=""/>
+				<p>Smiley face drawn on snow stock</p>
 			</div>
 			<div class="photos">
 				<img src="imgs/aa8.jpg" alt=""/>
-				<p>Thank you Americas Heroes (03/27/2020)</p>
-			</div>
-			<div class="photos">
-				<img src="imgs/aa9.jpg" alt=""/>
-				<p>Smiley face drawn on snow stock</p>
+				<p>Thank you Americas Heroes (03/27/2020) - Medical Center</p>
 			</div>
 			<div class="photos">
 				<img src="imgs/aa10.jpg" alt=""/>
 				<p>Timber bridge on Huron River</p>
 			</div>
-			<div class="photos">
-				<img src="imgs/aa11.jpg" alt=""/>
-				<p>Swing</p>
-			</div>
-			<div class="photos">
+			<div class="photos phone">
 				<img src="imgs/aa12.jpg" alt=""/>
 				<p>James and Anne Duderstadt Center</p>
 			</div>
@@ -75,7 +88,7 @@
     </main>
 
 	<footer>
-		<p>&copy; 2021-2025 Ziyun Wang. All rights reserved.</p>
+		<p>&copy; 2021-2025 Ziyun Wang. All rights reserved. <button onclick="document.location='form.html'">Contact Me</button></p>
 	</footer>
 </body>
 </html>
